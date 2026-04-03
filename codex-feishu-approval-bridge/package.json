@@ -1,0 +1,25 @@
+{
+  "name": "codex-feishu-approval-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local bridge between Codex app-server approvals and Feishu interactive cards.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "start": "tsx main.ts",
+    "demo:terminal": "tsx main.ts --approval-mode terminal",
+    "test": "node --test --import tsx"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.60.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
